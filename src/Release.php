@@ -23,8 +23,8 @@ class Release
     protected $flags = [];
     protected $original;
 
-    protected $season = 0;
-    protected $episode = 0;
+    protected $season = null;
+    protected $episode = null;
     /**
      * @var array
      */
