@@ -25,6 +25,10 @@ class Release
 
     protected $season = 0;
     protected $episode = 0;
+    /**
+     * @var array
+     */
+    private $multiLanguage;
 
     public function __construct($name, $strict = true, $defaults = [])
     {
@@ -274,6 +278,10 @@ class Release
     {
         return $this->language;
     }
+    
+    public function getMultiLanguage() {
+        return $this->multiLanguage;
+    }
 
     private function parseLanguage(&$title)
     {
@@ -296,6 +304,7 @@ class Release
         if (count($languages) == 1) {
             return $languages[0];
         } else if (count($languages) > 1) {
+            $this->multiLanguage = $languages;
             return SrpRc::LANGUAGE_MULTI;
         } else {
             return null;
