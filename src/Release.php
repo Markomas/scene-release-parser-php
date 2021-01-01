@@ -185,8 +185,8 @@ class Release
             // 01 -> 1 (numeric)
             $this->setSeason(intval($matches[1]));
 
-            if ($matches[2]) {
-                $this->setEpisode($matches[2]);
+            if ($matches[4]) {
+                $this->setEpisode(intval($matches[4]));
             }
 
             return $matches[4];
