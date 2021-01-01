@@ -180,17 +180,18 @@ class Release
     {
         $type = null;
 
-        $title = preg_replace_callback('#[\.\-]S(\d+)[\.\-]?((E(\d+)?)(E(\d+))?)([\.\-])#i', function ($matches) use (&$type) {
+        $title = preg_replace_callback('#S(\d+)(?!.*S(\d+)).*?E(\d+)(?!.*S(\d+))#i', function ($matches) use (&$type) {
             $type = SrpRc::TVSHOW;
             // 01 -> 1 (numeric)
             $this->setSeason(intval($matches[1]));
 
-            if ($matches[4]) {
-                $this->setEpisode(intval($matches[4]));
+            if ($matches[3]) {
+                $this->setEpisode(intval($matches[3]));
             }
 
-            return $matches[4];
+            return $matches[0];
         }, $title, 1, $count);
+
 
         if ($count == 0) {
             // Not a Release
