@@ -38,6 +38,10 @@ class ReleaseConstants
     const RESOLUTION_SD = 'SD';
     const RESOLUTION_720P = '720p';
     const RESOLUTION_1080P = '1080p';
+    const RESOLUTION_1440P = '1440p';
+    const RESOLUTION_2160P = '2160p';
+    const RESOLUTION_3240P = '3240p';
+    const RESOLUTION_4320P = '4320p';
 
     const DUB = 'dub';
     const DUB_DUBBED = 'DUBBED';
@@ -164,6 +168,22 @@ class ReleaseConstants
         ],
         self::RESOLUTION_1080P => [
             '1080p'
+        ],
+        self::RESOLUTION_1440P => [
+            '1440p',
+            '2k'
+        ],
+        self::RESOLUTION_2160P => [
+            '2160p',
+            '2K'
+        ],
+        self::RESOLUTION_3240P => [
+            '3240p',
+            '6k',
+        ],
+        self::RESOLUTION_4320P => [
+            '4320p',
+            '8k',
         ]
     ];
 
