@@ -234,6 +234,7 @@ class ReleaseConstants
         'ENGLISH' => [
             'ENGLISH',
             'EN',
+            'ENG',
             'VOA'
         ],
         'ESTONIAN' => 'ESTONIAN',
@@ -250,7 +251,14 @@ class ReleaseConstants
         'KOREAN' => 'KOREAN',
         'LAOTIAN' => 'LAOTIAN',
         'LATVIAN' => 'LATVIAN',
-        'LITHUANIAN' => 'LITHUANIAN',
+        'LITHUANIAN' => [
+            'LITHUANIAN',
+            'LT',
+            'LIETUVIU',
+            'LIETUVIŲ',
+            'Lietuviškai',
+            'Liet',
+        ],
         'MALAY' => 'MALAY',
         'MALAYSIAN' => 'MALAYSIAN',
         'MAORI' => 'MAORI',
@@ -259,7 +267,10 @@ class ReleaseConstants
         'POLISH' => 'POLISH',
         'PORTUGUESE' => 'PORTUGUESE',
         'ROMANIAN' => 'ROMANIAN',
-        'RUSSIAN' => 'RUSSIAN',
+        'RUSSIAN' => [
+            'RUSSIAN',
+            'RU'
+        ],
         'SPANISH' => 'SPANISH',
         'SWAHILI' => 'SWAHILI',
         'SWEDISH' => 'SWEDISH',
