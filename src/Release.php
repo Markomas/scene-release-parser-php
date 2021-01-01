@@ -28,7 +28,7 @@ class Release
     /**
      * @var array
      */
-    private $multiLanguage;
+    private $multiLanguage = [];
 
     public function __construct($name, $strict = true, $defaults = [])
     {
@@ -302,6 +302,7 @@ class Release
         }
 
         if (count($languages) == 1) {
+            $this->multiLanguage = $languages;
             return $languages[0];
         } else if (count($languages) > 1) {
             $this->multiLanguage = $languages;
