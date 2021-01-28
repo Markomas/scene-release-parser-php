@@ -12,6 +12,7 @@ class ReleaseConstants
     const GENERATED_RELEASE = 2;
 
     const SOURCE = 'source';
+    const SOURCE_BDRemux = 'BDRemux';
     const SOURCE_DVDRIP = 'DVDRip';
     const SOURCE_DVDSCR = 'DVDScr';
     const SOURCE_BDSCR = 'BDScr';
@@ -91,6 +92,9 @@ class ReleaseConstants
             'web-rip',
             'webhd',
             'web'
+        ],
+        self::SOURCE_BDRemux => [
+            'bdremux'
         ],
         self::SOURCE_BDRIP => [
             'bdrip',
